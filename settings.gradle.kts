@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Secretly"
 include(":app")
+include(":core:designsystem")
