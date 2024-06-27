@@ -1,16 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.compose.compiler)
 }
 
 android {
     namespace = "com.android.secretly"
-    compileSdk = 34
+    compileSdk = libs.versions.compile.sdk.version.get().toInt()
 
     defaultConfig {
         applicationId = "com.android.secretly"
-        minSdk = 24
-        targetSdk = 34
+        minSdk = libs.versions.min.sdk.version.get().toInt()
+        targetSdk = libs.versions.target.sdk.version.get().toInt()
         versionCode = 1
         versionName = "1.0"
 
