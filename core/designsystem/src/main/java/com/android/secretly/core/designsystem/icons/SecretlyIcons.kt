@@ -7,19 +7,24 @@ import androidx.compose.material.icons.outlined.FavoriteBorder
 import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.Person
 import androidx.compose.material.icons.outlined.Settings
+import androidx.compose.material.icons.rounded.ArrowDropDown
+import androidx.compose.material.icons.rounded.ArrowDropUp
 import androidx.compose.material.icons.rounded.Close
+import androidx.compose.material.icons.rounded.DateRange
 import androidx.compose.material.icons.rounded.Email
 import androidx.compose.material.icons.rounded.Favorite
 import androidx.compose.material.icons.rounded.Home
 import androidx.compose.material.icons.rounded.LocationOn
-import androidx.compose.material.icons.rounded.Lock
 import androidx.compose.material.icons.rounded.Notifications
+import androidx.compose.material.icons.rounded.Password
 import androidx.compose.material.icons.rounded.Person
 import androidx.compose.material.icons.rounded.Phone
 import androidx.compose.material.icons.rounded.Refresh
 import androidx.compose.material.icons.rounded.Search
 import androidx.compose.material.icons.rounded.Settings
 import androidx.compose.material.icons.rounded.Share
+import androidx.compose.material.icons.rounded.Visibility
+import androidx.compose.material.icons.rounded.VisibilityOff
 import androidx.compose.material.icons.rounded.Warning
 
 /**
@@ -41,9 +46,14 @@ object SecretlyIcons {
     val Share = Icons.Rounded.Share
     val Email = Icons.Rounded.Email
     val LocationOn = Icons.Rounded.LocationOn
-    val Lock = Icons.Rounded.Lock
+    val Password = Icons.Rounded.Password
+    val Date = Icons.Rounded.DateRange
+    val Visible = Icons.Rounded.Visibility
+    val NotVisible = Icons.Rounded.VisibilityOff
     val Phone = Icons.Rounded.Phone
     val Warning = Icons.Rounded.Warning
     val Send = Icons.AutoMirrored.Rounded.Send
     val ArrowBack = Icons.AutoMirrored.Rounded.ArrowBack
+    val ArrowUp = Icons.Rounded.ArrowDropUp
+    val ArrowDown = Icons.Rounded.ArrowDropDown
 }

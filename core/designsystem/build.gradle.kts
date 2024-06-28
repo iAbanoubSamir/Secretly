@@ -43,6 +43,7 @@ dependencies {
     api(libs.androidx.ui.graphics)
     api(libs.androidx.ui.tooling.preview)
     api(libs.androidx.material3)
+    implementation(libs.material.icons.extended)
 
     implementation(libs.coil.compose)
 }
