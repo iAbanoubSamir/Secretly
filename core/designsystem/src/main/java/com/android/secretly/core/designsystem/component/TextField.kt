@@ -45,6 +45,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.android.secretly.core.designsystem.R
 import com.android.secretly.core.designsystem.icons.SecretlyIcons
+import com.android.secretly.core.util.date.DateFormatter
 
 /**
  * Secretly themed text field. Provides a basic text field without a bottom line stroke,
@@ -280,7 +281,7 @@ private fun DateDialog(onDateSelected: (String, Long) -> Unit, onDismiss: () -> 
     )
 
     selectedDate =
-        dateState.selectedDateMillis?.let { DateFormatter.formatDate(it) }.toString()
+        dateState.selectedDateMillis?.let { DateFormatter().format(it) }.toString()
     DatePickerDialog(
         modifier = Modifier.padding(16.dp),
         onDismissRequest = { onDismiss() },

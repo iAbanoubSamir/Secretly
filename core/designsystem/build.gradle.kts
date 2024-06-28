@@ -35,6 +35,8 @@ android {
 
 dependencies {
 
+    implementation(project(":core:util"))
+
     implementation(libs.androidx.core.ktx)
     implementation(libs.ui.text.google.fonts)
 
