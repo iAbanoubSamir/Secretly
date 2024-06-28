@@ -2,19 +2,22 @@ package com.android.secretly.core.util.date
 
 import com.google.common.truth.Truth.assertThat
 import org.junit.jupiter.api.Test
+import java.text.SimpleDateFormat
+import java.util.Date
+import java.util.Locale
 
 class DateFormatterTest {
 
     @Test
     fun `formatDate, returns formatted date string`() {
+
         val dateFormatter = formatDate(1719592620115)
 
-        val result = "Fri Jun 28 2024 16:37:00"
-
-        assertThat(result).isEqualTo(dateFormatter)
+        assertThat(dateFormatter).isEqualTo("28-06-2024")
     }
 
     private fun formatDate(date: Long): String {
-        return "Fri Jun 28 2024 16:37:00"
+        val dateFormat = SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH)
+        return dateFormat.format(Date(date))
     }
 }
