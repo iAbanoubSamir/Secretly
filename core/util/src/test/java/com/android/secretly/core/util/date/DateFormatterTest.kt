@@ -14,4 +14,9 @@ class DateFormatterTest {
         assertThat(result).isEqualTo("28-06-2024")
     }
 
+    @Test
+    fun `formatDate, return formatted in the give format`() {
+
+        assertThat(result).isEqualTo(expected)
+    }
 }
