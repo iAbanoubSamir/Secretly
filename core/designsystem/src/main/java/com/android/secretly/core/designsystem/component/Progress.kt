@@ -6,6 +6,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 
 
@@ -37,4 +38,10 @@ object SecretlyCircularProgressDefaults {
      * Default size of the progress indicator.
      */
     val Size = 48.dp
+}
+
+@Preview(name = "Circular Progress")
+@Composable
+private fun SecretlyCircularProgressPreview() {
+    SecretlyCircularProgress()
 }
