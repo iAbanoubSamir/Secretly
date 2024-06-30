@@ -16,6 +16,7 @@ coil = "2.6.0"
 junitJupiter = "5.8.1"
 truth = "1.4.2"
 datastorePreferences = "1.1.1"
+koin-compose = "3.5.6"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,6 +39,7 @@ ui-text-google-fonts = { group = "androidx.compose.ui", name = "ui-text-google-f
 coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
 truth = { group = "com.google.truth", name = "truth", version.ref = "truth" }
 datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences-core", version.ref = "datastorePreferences" }
+koin-compose = { group = "io.insert-koin", name = "koin-androidx-compose", version.ref = "koin-compose" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

@@ -40,4 +40,6 @@ dependencies {
     testImplementation(libs.junit)
 
     implementation(libs.datastore.preferences)
+
+    implementation(libs.koin.compose)
 }
