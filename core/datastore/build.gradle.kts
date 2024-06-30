@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.expat.germany.core.datastore"
+    namespace = "com.android.secretly.core.datastore"
     compileSdk = 34
 
     defaultConfig {
