@@ -5,10 +5,10 @@ plugins {
 
 android {
     namespace = "com.android.secretly.core.datastore"
-    compileSdk = 34
+    compileSdk = libs.versions.compile.sdk.version.get().toInt()
 
     defaultConfig {
-        minSdk = 24
+        minSdk = libs.versions.min.sdk.version.get().toInt()
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
@@ -33,6 +33,8 @@ android {
 }
 
 dependencies {
+
+    implementation(project(":core:model"))
 
     implementation(libs.androidx.core.ktx)
     testImplementation(libs.junit)
